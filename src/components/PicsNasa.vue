@@ -42,7 +42,6 @@ export default {
     max-width: 960px;
     width: 100%;
     padding: 8px;
-    /*font-size: 16px;*/
   }
 
   .results {

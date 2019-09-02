@@ -2,7 +2,7 @@
   <div id="app">
     <div id="nav">
       <router-link to="/">images.api</router-link> |
-      <router-link to="/about">APOD</router-link>
+      <router-link to="/apod">APOD</router-link>
     </div>
     <router-view/>
   </div>

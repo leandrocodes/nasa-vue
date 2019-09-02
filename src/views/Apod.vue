@@ -1,5 +1,16 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
-  </div>
+    <ApodPics></ApodPics>
 </template>
+
+<script>
+import ApodPics from '../components/ApodPics'
+export default {
+    components:{
+      ApodPics
+    }
+}
+</script>
+
+<style>
+
+</style>

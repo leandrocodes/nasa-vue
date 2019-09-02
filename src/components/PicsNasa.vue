@@ -3,9 +3,11 @@
         <input type="text" v-model="query" :key-up="getPics()" />
         <p>{{ query }}</p>
 
-        <div v-for="result in results" class="img-result" :key="result">
-            <img v-bind:src="result.links[0].href" />
-            <p>{{result.data[0].title.substring(0,80)}}</p>
+        <div v-if="results">
+            <div v-for="result in results" class="img-result" :key="result">
+                <img v-bind:src="result.links[0].href" />
+                <p>{{result.data[0].title.substring(0,80)}}</p>
+            </div>
         </div>
     </div>
 </template>
@@ -21,13 +23,12 @@ export default {
     },
     methods: {
         getPics() {
-            axios
-                .get(
-                    `https://images-api.nasa.gov/search?q=${this.query}&media_type=image`
-                )
+            axios.get(`https://images-api.nasa.gov/search?q=${this.query}&media_type=image`)
+                
                 .then(res => {
                     this.results = res.data.collection.items
                 })
+                
                 .catch(err => {
                     console.log(err)
                 })
@@ -37,5 +38,8 @@ export default {
 </script>
 
 <style>
-
+img {
+    height: 200px;
+    width: 250px;
+}
 </style>

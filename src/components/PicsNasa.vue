@@ -1,4 +1,3 @@
-/* eslint-disable */
 <template>
     <div>
         <input type="text" v-model="query" @keyup.prevent="getPics()" />
@@ -72,7 +71,7 @@ export default {
     text-shadow: 0px 1px 3px rgba(0,0,0,0.4);
     background: transparent;  /* fallback for old browsers */
     background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.5)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    
+
   }
   .img-result img {
     position:absolute;

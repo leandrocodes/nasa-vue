@@ -3,14 +3,14 @@
 </template>
 
 <script>
-import ApodPics from '../components/ApodPics'
+import ApodPics from "../components/ApodPics"
 export default {
-  components:{
-      ApodPics
-  }
+    components: {
+        ApodPics
+          
+    }
 }
 </script>
 
 <style>
-
 </style>

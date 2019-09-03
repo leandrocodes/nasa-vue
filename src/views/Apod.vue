@@ -5,9 +5,9 @@
 <script>
 import ApodPics from '../components/ApodPics'
 export default {
-    components:{
+  components:{
       ApodPics
-    }
+  }
 }
 </script>
 

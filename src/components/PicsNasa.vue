@@ -1,3 +1,4 @@
+/* eslint-disable */
 <template>
     <div>
         <input type="text" v-model="query" @keyup.prevent="getPics()" />

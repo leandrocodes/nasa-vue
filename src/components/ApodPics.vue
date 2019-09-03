@@ -2,6 +2,7 @@
     <div class="apod">
         <h1>APOD</h1>
         <div class="apod-result" v-if="result">
+            <h1> {{ result.title }} </h1>
             <img :src="result.hdurl" alt />
         </div>
     </div>
